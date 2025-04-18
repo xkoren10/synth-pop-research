@@ -1,0 +1,10 @@
+John Smith: 1 1 1 4 1 1 2 1 1
+Emily Johnson: 2 2 4 3 2 2 3 2 2
+Michael Brown: 2 1 2 3 1 1 2 1 1
+Sarah Davis: 1 1 2 3 1 1 2 1 1
+Daniel Miller: 2 2 3 3 2 2 3 2 2
+Lisa Wilson: 1 1 1 2 1 1 2 1 1
+Kevin Moore: 2 2 3 3 2 2 3 2 2
+Ashley Taylor: 2 1 2 3 1 1 2 1 1
+Christopher Anderson: 1 1 1 2 1 1 2 1 1
+Jessica Martinez: 2 2 3 3 2 2 3 2 2

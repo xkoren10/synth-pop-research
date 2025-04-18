@@ -1,0 +1,20 @@
+61. Mia Garcia, 27, Female - Journalist - Loves writing, traveling, and trying new foods - Curious and adventurous.
+62. Ethan Hall, 44, Male - Professor - Enjoys reading literature, playing chess, and attending concerts - Intelligent and wise.
+63. Isabella Brown, 25, Female - Teacher - Interested in dancing, gardening, and learning new languages - Patient and enthusiastic.
+64. Liam Chen, 30, Male - Software Developer - Passionate about playing video games, attending comic-con, and learning new programming languages - Analytical and creative.
+65. Zoe Martin, 22, Female - Student - Loves writing, playing piano, and hiking - Creative and introspective.
+66. Noah Lee, 38, Male - Business Owner - Enjoys playing tennis, traveling, and trying new restaurants - Ambitious and charismatic.
+67. Charlotte Davis, 31, Female - Lawyer - Interested in reading history books, watching movies, and practicing yoga - Confident and strategic.
+68. Logan White, 42, Male - Firefighter - Passionate about playing basketball, working out, and spending time with family - Brave and loyal.
+69. Aria Patel, 28, Female - Event Planner - Loves trying new wines, traveling, and practicing photography - Organized and sociable.
+70. Julian Brooks, 36, Male - Personal Trainer - Enjoys weightlifting, playing football, and listening to music - Energetic and motivational.
+71. Evelyn Sanchez, 24, Female - Scientist - Interested in reading science fiction, playing chess, and learning new programming languages - Intelligent and analytical.
+72. Alexander Taylor, 45, Male - Architect - Passionate about playing violin, traveling, and designing sustainable buildings - Innovative and perfectionistic.
+73. Gabriella Gray, 26, Female - Social Worker - Loves volunteering, practicing meditation, and learning about different cultures - Empathetic and dedicated.
+74. Caleb Green, 40, Male - Police Officer - Enjoys playing hockey, working out, and spending time with family - Protective and courageous.
+75. Ruby Jenkins, 23, Female - Artist - Interested in painting, playing guitar, and attending art exhibitions - Expressive and imaginative.
+76. Harrison Rodriguez, 31, Male - Entrepreneur - Passionate about playing golf, reading business books, and traveling - Confident and entrepreneurial.
+77. Paige Lee, 29, Female - Nurse - Loves hiking, practicing yoga, and learning about holistic medicine - Caring and compassionate.
+78. Lucas Garcia, 35, Male - Engineer - Enjoys playing soccer, working on cars, and listening to music - Logical and resourceful.
+79. Mia Ross, 27, Female - Journalist - Interested in writing, traveling, and trying new foods - Curious and adventurous.
+80. Ethan Martin, 44, Male - Professor - Passionate about reading literature, playing chess.

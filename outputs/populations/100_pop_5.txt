@@ -1,0 +1,20 @@
+81. John Smith, 34, Male - Accountant, enjoys hiking and reading, detail-oriented and analytical.
+82. Sarah Johnson, 28, Female - Graphic Designer, loves painting and photography, creative and imaginative.
+83. Michael Brown, 45, Male - Chef, passionate about cooking and traveling, adventurous and sociable.
+84. Emily White, 22, Female - Student, interested in fashion and blogging, outgoing and trendy.
+85. David Jones, 50, Male - Engineer, likes DIY projects and chess, logical and methodical.
+86. Jessica Garcia, 31, Female - Nurse, enjoys volunteering and yoga, compassionate and caring.
+87. Richard Lee, 40, Male - Entrepreneur, interested in technology and investing, ambitious and risk-taker.
+88. Laura Martinez, 26, Female - Teacher, loves reading and gardening, patient and nurturing.
+89. James Rodriguez, 38, Male - Police Officer, likes fitness and sports, disciplined and brave.
+90. Linda Hernandez, 29, Female - Social Worker, passionate about social justice and hiking, empathetic and resilient.
+91. Robert Phillips, 55, Male - Lawyer, enjoys golf and classical music, analytical and persuasive.
+92. Patricia Clark, 47, Female - Real Estate Agent, loves interior design and traveling, personable and persuasive.
+93. Daniel Lewis, 32, Male - Software Developer, interested in gaming and coding, innovative and introverted.
+94. Jennifer Walker, 24, Female - Marketing Specialist, enjoys social media and fashion, creative and communicative.
+95. William Allen, 60, Male - Retired, likes fishing and woodworking, patient and meticulous.
+96. Elizabeth Young, 35, Female - Photographer, passionate about art and nature, artistic and observant.
+97. Joseph King, 42, Male - Architect, enjoys drawing and traveling, imaginative and precise.
+98. Barbara Scott, 50, Female - Business Owner, loves reading and yoga, decisive and motivational.
+99. Thomas Wright, 36, Male - Electrician, likes home improvement and technology, practical and resourceful.
+100. Susan Harris, 33, Female - Event Planner, enjoys party planning and decorating, organized and creative.

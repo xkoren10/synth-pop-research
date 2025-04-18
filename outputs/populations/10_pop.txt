@@ -1,0 +1,10 @@
+1. John Smith, 34, Male - Software Engineer - Interested in hiking, coding, and reading; analytical and introverted.
+2. Emily Johnson, 28, Female - Marketing Specialist - Enjoys yoga, cooking, and blogging; creative and extroverted.
+3. Michael Brown, 45, Male - Construction Worker - Likes fishing, woodworking, and watching sports; hard-working and dependable.
+4. Sarah Davis, 55, Female - School Principal - Passionate about education, traveling, and gardening; compassionate and organized.
+5. Daniel Miller, 22, Male - College Student - Interested in video games, skateboarding, and music; adventurous and outgoing.
+6. Lisa Wilson, 30, Female - Nurse - Enjoys volunteering, reading, and running; empathetic and patient.
+7. Kevin Moore, 50, Male - Chef - Loves cooking, wine tasting, and photography; creative and sociable.
+8. Ashley Taylor, 40, Female - Architect - Interested in design, hiking, and painting; meticulous and visionary.
+9. Christopher Anderson, 35, Male - Retired Military Officer - Enjoys golf, traveling, and mentoring; disciplined and respectful.
+10. Jessica Martinez, 37, Female - Graphic Designer - Likes drawing, fashion, and blogging; artistic and innovative.
