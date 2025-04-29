@@ -1,4 +1,4 @@
-TEST_TYPE = "psycho"
+TEST_TYPE = "machiavellianism"
 MODEL = "deepseek"
 
 CRED = '\033[91m'

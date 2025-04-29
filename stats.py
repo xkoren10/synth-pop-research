@@ -94,3 +94,63 @@ output_file = f'outputs/statistics/{MODEL}/{TEST_TYPE}/combined_responses_with_a
 combined_df.to_csv(output_file)
 
 print(f"Updated dataframe with average row saved to {output_file}")
+
+import os
+import numpy as np
+import pandas as pd
+from config import MODEL, TEST_TYPE
+
+# Define the file path and temperature range
+file_path = f'outputs/reports/{MODEL}/{TEST_TYPE}'
+
+# Get the number of files in the directory
+try:
+    num_files = len([f for f in os.listdir(file_path) if os.path.isfile(os.path.join(file_path, f))])
+except FileNotFoundError:
+    print(f"Error: Directory '{file_path}' not found.")
+    exit()
+
+temperatures = [round(t * 0.1, 1) for t in range(num_files)]  # From 0.0 to 2.0
+num_questions = 10 if TEST_TYPE == "bfi" else 9
+
+# Prepare storage for rows
+rows = []
+
+for temp in temperatures:
+    file_name = f"{file_path}/response_{temp}.txt"
+
+    temp_responses = []
+
+    with open(file_name, 'r') as f:
+        for line in f:
+            if ':' not in line:
+                continue
+            _, responses = line.strip().split(':')
+            response_values = list(map(int, responses.strip().split()))
+            if len(response_values) == num_questions:
+                temp_responses.append(response_values)
+
+    if temp_responses:
+        response_array = np.array(temp_responses)  # shape: (n_people, n_questions)
+        means = np.mean(response_array, axis=0)
+        stds = np.std(response_array, axis=0)
+        combined = np.concatenate([means, stds])
+        rows.append(combined)
+    else:
+        print(f"No valid responses found for temperature {temp}")
+        continue
+
+# Create column labels
+questions = [f'Q{i + 1}' for i in range(num_questions)]
+columns = [f'{q}_mean' for q in questions] + [f'{q}_std' for q in questions]
+
+# Create DataFrame
+stats_df = pd.DataFrame(rows, columns=columns, index=temperatures)
+stats_df.index.name = "temperature"
+
+# Save to CSV
+output_file = f'outputs/statistics/{MODEL}/{TEST_TYPE}/temperature_stats.csv'
+os.makedirs(os.path.dirname(output_file), exist_ok=True)
+stats_df.to_csv(output_file)
+
+print(f"Temperature-based statistics saved to {output_file}")
