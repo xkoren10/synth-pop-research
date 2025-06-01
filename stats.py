@@ -1,7 +1,7 @@
-import numpy as np
-import pandas as pd
-from config import TEST_TYPE, MODEL
 import os
+import numpy as np
+from config import MODEL, TEST_TYPE
+import pandas as pd
 
 # Define the file path and temperature range
 file_path = f'outputs/reports/{MODEL}/{TEST_TYPE}'
@@ -67,9 +67,6 @@ combined_df.to_csv(output_file)
 
 print(f"Combined statistics calculated and saved successfully to {output_file}!")
 
-
-import pandas as pd
-
 # Load the combined statistics from the CSV file
 input_file = f'outputs/statistics/{MODEL}/{TEST_TYPE}/combined_responses.csv'
 combined_df = pd.read_csv(input_file, index_col=0)
@@ -94,11 +91,6 @@ output_file = f'outputs/statistics/{MODEL}/{TEST_TYPE}/combined_responses_with_a
 combined_df.to_csv(output_file)
 
 print(f"Updated dataframe with average row saved to {output_file}")
-
-import os
-import numpy as np
-import pandas as pd
-from config import MODEL, TEST_TYPE
 
 # Define the file path and temperature range
 file_path = f'outputs/reports/{MODEL}/{TEST_TYPE}'

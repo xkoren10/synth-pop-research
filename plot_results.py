@@ -1,7 +1,8 @@
-import matplotlib.pyplot as plt
-import numpy as np
 from config import TEST_TYPE, MODEL
+import pandas as pd
+import matplotlib.pyplot as plt
 import os
+import numpy as np
 
 # Define the file path and temperature range
 file_path = f'outputs/reports/{MODEL}/{TEST_TYPE}'
@@ -74,12 +75,6 @@ for persona, responses in personas_responses.items():
         print(f"Skipping {persona} due to incorrect number of temperatures: {len(responses)}")
 
 print("Graphs generated and saved successfully!")
-
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import os
-import numpy as np
 
 # Load the combined statistics from the CSV file
 input_file = f'outputs/statistics/{MODEL}/{TEST_TYPE}/combined_responses_with_average.csv'

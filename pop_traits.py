@@ -1,8 +1,6 @@
 import statistics
 import numpy as np
-
 import matplotlib.pyplot as plt
-
 from config import TEST_TYPE, MODEL, CEND,CGREEN, CRED
 from pop_traits.test_mapping import bfi_map, psychopathy_map, narcissism_map, machiavellianism_map
 
