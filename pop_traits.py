@@ -57,12 +57,17 @@ def calculate_stats(file_path, test_type):
     return stats
 
 def mse_distance(stats1, stats2):
-    error = 0.0
+    errors = []
     for trait in stats1:
         if trait in stats2:
-            error += (stats1[trait]["avg"] - stats2[trait]["avg"]) ** 2
-            error += (stats1[trait]["std"] - stats2[trait]["std"]) ** 2
-    return round(error, 4)
+            mean_diff = (stats1[trait]["avg"] - stats2[trait]["avg"]) ** 2
+            std_diff = (stats1[trait]["std"] - stats2[trait]["std"]) ** 2
+            errors.append((mean_diff + std_diff) / 2)
+    if TEST_TYPE == "bfi":
+        return round(sum(errors) / len(errors), 4)  # mean MSE across BFI traits
+    else:
+        return round(sum(errors), 4)  # total MSE for single-trait tests
+
 
 # Run over temperatures from 0.0 to 2.0 (step = 0.1)
 results = {}

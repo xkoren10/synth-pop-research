@@ -3,8 +3,8 @@ from config import TEST_TYPE, CRED, CGREEN, CEND
 from scipy.stats import ttest_ind
 
 # Define file paths
-model1_path = f'outputs/statistics/llama/{TEST_TYPE}/combined_responses.csv'
-model2_path = f'outputs/statistics/deepseek/{TEST_TYPE}/combined_responses.csv'
+model1_path = f'outputs/statistics/gpt-turbo/{TEST_TYPE}/combined_responses.csv'
+model2_path = f'outputs/statistics/gpt-turbo_100/{TEST_TYPE}/combined_responses.csv'
 
 # Load the data
 df_model1 = pd.read_csv(model1_path)

@@ -4,8 +4,8 @@ import numpy as np
 import os
 
 # Replace with your file path
-file_path = 'outputs/populations/10_pop.txt'
-output_path = 'outputs/populations/plots/age_distribution_10.png'
+file_path = 'outputs/populations/100_pop.txt'
+output_path = 'outputs/populations/plots/age_distribution_100.png'
 ages_by_gender = defaultdict(list)
 total_count = 0
 gender_count = defaultdict(int)
@@ -43,15 +43,28 @@ for gender in gender_list:
         bin_range = range(bins[i], bins[i + 1])
         bin_counts[gender][i] = sum(age_counts[age] for age in bin_range)
 
-# Plotting side-by-side bars
-x = np.arange(len(bin_labels))  # label positions
+# Identify non-empty bins
+non_empty_indices = [
+    i for i in range(len(bin_labels))
+    if any(bin_counts[gender][i] > 0 for gender in gender_list)
+]
+
+# Filter labels and counts
+filtered_bin_labels = [bin_labels[i] for i in non_empty_indices]
+filtered_bin_counts = {
+    gender: [bin_counts[gender][i] for i in non_empty_indices]
+    for gender in gender_list
+}
+
+# Plotting
+x = np.arange(len(filtered_bin_labels))  # label positions
 width = 0.8 / len(gender_list)  # divide bar width among genders
 
 plt.figure(figsize=(12, 6))
 
 for idx, gender in enumerate(gender_list):
     offset = (idx - len(gender_list) / 2) * width + width / 2
-    plt.bar(x + offset, bin_counts[gender], width=width, label=gender)
+    plt.bar(x + offset, filtered_bin_counts[gender], width=width, label=gender)
 
 # Summary box
 mean_age = np.mean(all_ages)
@@ -60,16 +73,15 @@ for gender in gender_count:
     percent = (gender_count[gender] / total_count) * 100
     summary_text += f"{gender}: {percent:.1f}%\n"
 
-# Labels and formatting
-plt.xticks(x, bin_labels, rotation=45)
-plt.xlabel('Age Range')
-plt.ylabel('Number of People')
-plt.title('Age Distribution by Gender (Side-by-Side Bars)')
-plt.legend()
+# Labels and formatting with increased font sizes
+plt.xticks(x, filtered_bin_labels, rotation=45, fontsize=12)
+plt.xlabel('Age Range', fontsize=20)
+plt.ylabel('Number of People', fontsize=20)
+plt.legend(fontsize=20)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
-# Add summary box
-plt.gcf().text(0.75, 0.75, summary_text.strip(), bbox=dict(facecolor='white', alpha=0.8), fontsize=10)
+# Add summary box with larger font
+plt.gcf().text(0.75, 0.6, summary_text.strip(), bbox=dict(facecolor='white', alpha=0.8), fontsize=20)
 
 plt.tight_layout()
 plt.savefig(output_path, dpi=300)

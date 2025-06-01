@@ -1,5 +1,5 @@
-TEST_TYPE = "machiavellianism"
-MODEL = "deepseek"
+TEST_TYPE = "bfi"
+MODEL = "gpt-turbo"
 
 CRED = '\033[91m'
 CGREEN  = '\33[32m'
